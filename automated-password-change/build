@@ -1,0 +1,9 @@
+#!/bin/sh
+echo "Joshua Nasiatka | Winter 2015"
+echo "This will make the package file\n"
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+sudo pkgbuild --identifier net.bitcraftlabs.passchanger --nopayload --scripts $DIR/scripts "$DIR/PassChanger.pkg"
+
+echo "\nFinished successfully!"

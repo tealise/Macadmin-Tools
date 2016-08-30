@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo updating security policies
+dscl . -passwd /Users/myAdminUser oldpass newpass
